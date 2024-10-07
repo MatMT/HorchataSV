@@ -34,10 +34,6 @@ To deploy this configuration, each service has its own PowerShell script in this
 1. **Clone the Repository**:
    Clone this repository to your Windows Server Core machine:
    
-   ```bash
-   git clone https://github.com/your-username/server-configurations.git
-   cd server-configurations
-
 2. **Install Active Directory**:
     powershell.exe -ExecutionPolicy Bypass -File .\ActiveDirectory.ps1
 
