@@ -35,10 +35,15 @@ To deploy this configuration, each service has its own PowerShell script in this
    Clone this repository to your Windows Server Core machine:
    
 2. **Install Active Directory**:
+
+   ```bash
     powershell.exe -ExecutionPolicy Bypass -File .\ActiveDirectory.ps1
+   ```
 
     **Note**: After the installation, the server may require a restart. Check the output and restart manually if needed.
 
+   ```bash
     powershell.exe -ExecutionPolicy Bypass -File .\AD-OrganizationalUnit.ps1
+   ```
 
 3. **Install DNS**
