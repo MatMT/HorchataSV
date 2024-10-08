@@ -1,5 +1,10 @@
 # Step 2
 
+# Verificar si la carpeta C:\Certs existe, y si no, crearla
+if (-Not (Test-Path -Path "C:\Certs")) {
+    New-Item -Path "C:\Certs" -ItemType Directory
+}
+
 # Archivo de configuración para la solicitud de certificado
 $csrConfig = @"
 [NewRequest]
