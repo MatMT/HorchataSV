@@ -4,7 +4,7 @@
 Install-WindowsFeature ADCS-Cert-Authority -IncludeManagementTools
 
 # Configurar la CA para Shakira
-Install-AdcsCertificationAuthority -CAType StandaloneRootCA
+Install-AdcsCertificationAuthority -CAType StandaloneRootCA -CACommonName "Shakira"
 
 # Mensaje de éxito
-Write-Host "La CA 'Shakira' ha sido instalada correctamente."
+Write-Host "La CA 'Shakira' ha sido instalada correctamente." 
