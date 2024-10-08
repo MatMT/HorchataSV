@@ -1,4 +1,5 @@
-# ActiveDirectory.ps1 
+# Step 1
+
 # Instalar y configurar Active Directory para horchata.sv - By Elidev
 
 # Instalar
