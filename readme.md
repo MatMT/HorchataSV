@@ -47,3 +47,17 @@ To deploy this configuration, each service has its own PowerShell script in this
    ```
 
 3. **Install DNS**
+
+4. **Install DHCP**
+
+5. **Set Up Certificate Authority (CA) "Shakira"**
+   5.1 Install Certificate Services:
+   ```bash
+   cd CertificateServices
+   powershell.exe -ExecutionPolicy Bypass -File .\CertAuthority.ps1
+   ```
+   **Note:** During this process, you will be prompted to provide parameters such as:
+   
+   **CA Name:** Enter "Shakira" as the name of the Certificate Authority.
+   **Type of CA:** Select StandaloneRootCA when prompted.
+   The server may request a restart after installing the role. Restart if necessary.
