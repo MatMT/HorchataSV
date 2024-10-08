@@ -33,8 +33,16 @@ To deploy this configuration, each service has its own PowerShell script in this
 
 1. **Clone the Repository**:
    Clone this repository to your Windows Server Core machine:
+
+   ```bash
+   Invoke-WebRequest -Uri https://github.com/git-for-windows/git/releases/download/v2.46.2.windows.1/Git-2.46.2-64-bit.exe -OutFile C:\Git-2.46.2-64-bit.exe
+   ```
+
+   ```bash
+   Start-Process "C:\Git-2.46.2-64-bit.exe" -Wait
+   ```
    
-2. **Install Active Directory**:
+3. **Install Active Directory**:
 
    ```bash
     powershell.exe -ExecutionPolicy Bypass -File .\ActiveDirectory.ps1
@@ -46,11 +54,11 @@ To deploy this configuration, each service has its own PowerShell script in this
     powershell.exe -ExecutionPolicy Bypass -File .\AD-OrganizationalUnit.ps1
    ```
 
-3. **Install DNS**
+4. **Install DNS**
 
-4. **Install DHCP**
+5. **Install DHCP**
 
-5. **Set Up Certificate Authority (CA) "Shakira"**
+6. **Set Up Certificate Authority (CA) "Shakira"**
    5.1 Install Certificate Services:
    ```bash
    cd CertificateServices
