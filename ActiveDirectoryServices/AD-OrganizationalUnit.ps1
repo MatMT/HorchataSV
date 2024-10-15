@@ -29,11 +29,11 @@ New-ADUser -Name "Kennard Pineda" -UserPrincipalName "kennardpineda@horchata.sv"
 #   + Vendedor
 New-ADUser -Name "Marcelo Cruz" -UserPrincipalName "marcelocruz@horchata.sv" -Path "OU=Ventas,OU=Departamento Comercial,OU=Gerencia General,DC=horchata,DC=sv" -AccountPassword (ConvertTo-SecureString "Password02" -AsPlainText -Force) -Enabled $true
 
-#   - Diseño    ================================
-New-ADOrganizationalUnit -Name "Diseño" -Path "OU=Departamento Comercial,OU=Gerencia General,DC=horchata,DC=sv"
+#   - Disenio    ================================
+New-ADOrganizationalUnit -Name "Disenio" -Path "OU=Departamento Comercial,OU=Gerencia General,DC=horchata,DC=sv"
 
 #   + Secretaria
-New-ADUser -Name "Yanira Berrios" -UserPrincipalName "yanira.berrios@horchata.sv" -Path "OU=Diseño,OU=Departamento Comercial,OU=Gerencia General,DC=horchata,DC=sv" -AccountPassword (ConvertTo-SecureString "Corazonbello" -AsPlainText -Force) -Enabled $true
+New-ADUser -Name "Yanira Berrios" -UserPrincipalName "yanira.berrios@horchata.sv" -Path "OU=Disenio,OU=Departamento Comercial,OU=Gerencia General,DC=horchata,DC=sv" -AccountPassword (ConvertTo-SecureString "Corazonbello24" -AsPlainText -Force) -Enabled $true
 
 #   + Diseñador
-New-ADUser -Name "Mateo Elias" -UserPrincipalName "mateoelias@horchata.sv" -Path "OU=Diseño,OU=Departamento Comercial,OU=Gerencia General,DC=horchata,DC=sv" -AccountPassword (ConvertTo-SecureString "Password04" -AsPlainText -Force) -Enabled $true
+New-ADUser -Name "Mateo Elias" -UserPrincipalName "mateoelias@horchata.sv" -Path "OU=Disenio,OU=Departamento Comercial,OU=Gerencia General,DC=horchata,DC=sv" -AccountPassword (ConvertTo-SecureString "Password04" -AsPlainText -Force) -Enabled $true

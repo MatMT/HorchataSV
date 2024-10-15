@@ -104,6 +104,19 @@ To verify the installed Windows features and their configuration, use the follow
 
    These commands provide information about the Active Directory domain and forest configuration.
 
+   ##### 3.1 **Verify Active Directory Users and Organizational Units (OUs)**:
+
+   ```powershell
+   Get-ADOrganizationalUnit -Filter * | Select-Object Name, DistinguishedName
+   ```
+
+   This command lists all the users in the Active Directory along with their display names.
+
+   ```powershell
+   Get-ADUser -Filter * -SearchBase "OU=Departamento Comercial,OU=Gerencia General,DC=horchata,DC=sv" -Properties DisplayName, SamAccountName | Select-Object DisplayName, SamAccountName
+   ```
+
+
 4. **Verify DNS Configuration**:
    
    ```powershell
