@@ -3,7 +3,7 @@
 # Instalar y configurar Active Directory para horchata.sv - By Elidev
 
 # Instalar
-Install-WindowsFeature -Name AD-Domain-Services -IncludeManagmentTools
+Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
 
 # Importar el módulo de despliegue de ADDS
 Import-Module ADDSDeployment
