@@ -7,16 +7,16 @@ Import-Module ActiveDirectory
 $OUs = Get-ADOrganizationalUnit -Filter *
 
 # Display all OUs
-Write-Output "Organizational Units:"
+Write-Host "====== Organizational Units ======" -ForegroundColor Cyan
 foreach ($OU in $OUs) {
-    Write-Output $OU.DistinguishedName
+    Write-Host $OU.DistinguishedName -ForegroundColor Yellow
 }
 
 # Get all users
 $Users = Get-ADUser -Filter *
 
 # Display all users
-Write-Output "`nUsers:"
+Write-Host "`n====== Users ======" -ForegroundColor Cyan
 foreach ($User in $Users) {
-    Write-Output $User.SamAccountName
+    Write-Host $User.SamAccountName -ForegroundColor Yellow
 }
