@@ -1,3 +1,5 @@
+# Step 1
+
 # Instalar el rol de DNS
 
 # Instalar el rol de DNS con herramientas de administración

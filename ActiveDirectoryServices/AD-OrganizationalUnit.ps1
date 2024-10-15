@@ -36,4 +36,4 @@ New-ADOrganizationalUnit -Name "Diseño" -Path "OU=Departamento Comercial,OU=Ger
 New-ADUser -Name "Yanira Berrios" -UserPrincipalName "yanira.berrios@horchata.sv" -Path "OU=Diseño,OU=Departamento Comercial,OU=Gerencia General,DC=horchata,DC=sv" -AccountPassword (ConvertTo-SecureString "Corazonbello" -AsPlainText -Force) -Enabled $true
 
 #   + Diseñador
-New-ADUser -Name "Mateo Elías" -UserPrincipalName "mateoelias@horchata.sv" -Path "OU=Diseño,OU=Departamento Comercial,OU=Gerencia General,DC=horchata,DC=sv" -AccountPassword (ConvertTo-SecureString "Password04" -AsPlainText -Force) -Enabled $true
+New-ADUser -Name "Mateo Elias" -UserPrincipalName "mateoelias@horchata.sv" -Path "OU=Diseño,OU=Departamento Comercial,OU=Gerencia General,DC=horchata,DC=sv" -AccountPassword (ConvertTo-SecureString "Password04" -AsPlainText -Force) -Enabled $true

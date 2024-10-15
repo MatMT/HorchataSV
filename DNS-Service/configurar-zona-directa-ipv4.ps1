@@ -1,3 +1,5 @@
+# Step 3
+
 # Configurar zona directa IPv4
 
 # Agregar registros A (IPv4)

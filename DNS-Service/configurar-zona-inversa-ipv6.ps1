@@ -1,3 +1,5 @@
+# Step 6
+
 # Configurar zona inversa IPv6
 
 # Crear la zona inversa para la red IPv6 2001:DB8:DEA:B::/64

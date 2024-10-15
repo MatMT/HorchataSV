@@ -1,3 +1,5 @@
+# Step 4
+
 # Configurar zona directa IPv6
 
 # Agregar registros AAAA (IPv6)

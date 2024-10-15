@@ -1,3 +1,5 @@
+# Step 2
+
 # Configurar la zona directa (maestra)
 
 # Crear la zona maestra para el dominio horchata.sv
