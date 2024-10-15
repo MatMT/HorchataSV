@@ -1,3 +1,5 @@
+# Step 8
+
 # Configurar reenviadores para consultas externas
 
 # Configurar los reenviadores a los servidores DNS públicos de Google

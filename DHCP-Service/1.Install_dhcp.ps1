@@ -1,3 +1,5 @@
+# Step 1
+
 # DHCP Windows Feature Installation
 Install-WindowsFeature -Name DHCP -IncludeManagementTools
 

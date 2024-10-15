@@ -1,3 +1,5 @@
+# Step 5
+
 # Configurar zona inversa IPv4
 
 # Crear la zona inversa para la subred 172.16.0.0/24

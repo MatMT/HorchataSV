@@ -1,3 +1,5 @@
+# Step 3
+
 #IPv6 Scope Configuration
 Add-DhcpServerv6Scope -Name "Scopev6" -Prefix 2001:db8:dea:b:: -State Active
 
