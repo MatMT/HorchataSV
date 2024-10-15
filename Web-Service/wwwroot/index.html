@@ -1,53 +1,122 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script src="https://cdn.tailwindcss.com"></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Servicio Web IIS</title>
-  </head>
-  <body class="bg-gradient-to-r from-purple-950 to-orange-900 text-white">
-    <h1 class="text-3xl text-center mt-5 font-bold">
-      Proyecto de Catedra | SPP G01L
-    </h1>
+  <title>Servicio Web IIS</title>
 
-    <h2 class="text-3xl text-center mt-5" >Integrantes:</h2>
+  <style>
+    body {
+      background: linear-gradient(to right, #3c096c, #ff6d00);
+      color: white;
+      font-family: Arial, sans-serif;
+    }
 
-    <div class="grid grid-cols-2 grid-rows-3 gap-4 mt-5 mx-0 md:mx-[5rem] 2xl:mx-[25rem]">
-      <div class="flex flex-col bg-black/40 text-center items-center py-5 px-3 rounded-lg">
-        <img class="rounded-full" src="marcelo.jpg" alt="Foto 2" style="width: 75px" />
+    h1,
+    h2 {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    h1 {
+      font-size: 1.75em;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: 1.50em;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, auto);
+      gap: 1rem;
+      margin: 20px auto;
+      padding: 0;
+      max-width: 50rem;
+    }
+
+    .grid div {
+      background-color: rgba(0, 0, 0, 0.4);
+      text-align: center;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .flex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    img.rounded-full {
+      border-radius: 50%;
+      width: 75px;
+    }
+
+    .grid .col-span-2 {
+      grid-column: span 2;
+    }
+
+    img {
+      max-width: 100%;
+    }
+
+    @media (min-width: 768px) {
+      .grid {
+        margin: 0 50px;
+      }
+    }
+
+    @media (min-width: 1536px) {
+      .grid {
+        margin: 0 250px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Proyecto de Catedra | SPP G01L</h1>
+
+  <h2>Integrantes:</h2>
+
+  <center>
+    <div class="grid">
+      <div class="flex">
+        <img class="rounded-full" src="marcelo.jpg" alt="Foto 1" />
         <p>Carlos Marcelo Cruz Menjivar | CM232707</p>
       </div>
-      <div class="flex flex-col bg-black/40 text-center items-center py-5 px-3">
-        <img class="rounded-full" src="mateo.jpg" alt="Foto 2" style="width: 75px" />
-        <p>Oscar Mateo Elias Lopez | EL232710</p>
+      <div class="flex">
+        <img class="rounded-full" src="mateo.jpg" alt="Foto 2" />
+        <p>Marcelo Mateo Elias Lopez | EL232710</p>
       </div>
-      <div class="flex flex-col bg-black/40 text-center items-center py-5 px-3">
-        <img class="rounded-full" src="kennard.jpg" alt="Foto 2" style="width: 75px" />
+      <div class="flex">
+        <img class="rounded-full" src="kennard.jpg" alt="Foto 3" />
         <p>Kennard David Pineda Aguilar | PA232735</p>
       </div>
-      <div class="flex flex-col bg-black/40 text-center items-center py-5 px-3">
-        <img class="rounded-full" src="martin.jpg" alt="Foto 2" style="width: 75px" />
+      <div class="flex">
+        <img class="rounded-full" src="martin.jpg" alt="Foto 4" />
         <p>Martin Eduardo Carbajal Torres | CT232704</p>
       </div>
-      <div class="flex flex-col col-span-2 bg-black/40 text-center items-center py-5 px-3">
-        <img class="rounded-full" src="javier.jpg" alt="Foto 2" style="width: 75px" />
+      <div class="flex col-span-2">
+        <img class="rounded-full" src="javier.jpg" alt="Foto 5" />
         <p>Javier Enrique Mejia Flores | MF232724</p>
       </div>
     </div>
+  </center>
 
-    <div class="flex flex-col justify-center items-center">
-      <h2 class="text-2xl mt-5 mb-5">Escudo del Barcelona F.C.</h2>
-      <img
-        src="barcelona.png"
-        alt="Escudo del Barcelona F.C."
-        style="width: 200px"
-      />
-    </div>
 
-  </body>
+  <div class="flex">
+    <h2>Escudo del Barcelona F.C.</h2>
+    <img src="barcelona.png" alt="Escudo del Barcelona F.C." style="width: 125px" F />
+  </div>
+</body>
 
-  
+
 </html>
