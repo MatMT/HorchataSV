@@ -29,6 +29,12 @@ To deploy this configuration, each service has its own PowerShell script in this
 - **PowerShell** is used to execute the configuration scripts.
 - You must have administrator privileges on the server.
 
+### IPV6 Config
+
+```
+New-NetIPAddress -InterfaceIndex <INDEX_NUMBER> -IPAddress 2001:db8:dea:b::2 -PrefixLength 64 -DefaultGateway 2001:db8:dea:b::1
+```
+
 ### Step-by-Step Process
 
 1. **Clone the Repository**:
@@ -56,9 +62,15 @@ To deploy this configuration, each service has its own PowerShell script in this
 
 4. **Install DNS**
 
-5. **Install DHCP**
+    ##### 4.1 DNS Ipv6
 
-6. **Set Up Certificate Authority (CA) "Shakira"**
+   ```
+   Set-DnsClientServerAddress -InterfaceIndex <INDEX_NUMBER> -ServerAddresses 2001:db8:dea:b::2
+   ```
+
+6. **Install DHCP**
+
+7. **Set Up Certificate Authority (CA) "Shakira"**
 
    ##### 6.1 Install Certificate Services:
    ```bash
@@ -126,7 +138,13 @@ To verify the installed Windows features and their configuration, use the follow
 
    These commands list the DNS zones and resource records configured on the DNS server.
 
-5. **Verify DHCP Configuration**:
+    ##### 4.1 PTR
+
+   ```
+   nslookup 2.0.b.dea.b.db8.1.0.0.2.ip6.arpa
+   ```
+
+6. **Verify DHCP Configuration**:
    
    ```powershell
    Get-DhcpServerv4Scope
@@ -135,7 +153,19 @@ To verify the installed Windows features and their configuration, use the follow
 
    These commands list the IPv4 and IPv6 scopes configured on the DHCP server.
 
-6. **Verify Web Server Configuration**:
+   ```
+   Get-DnsServerResourceRecord -ZoneName "horchata.sv" -Name "@" -RecordType A
+
+   Get-DnsServerResourceRecord -ZoneName "horchata.sv" -Name "@" -RecordType A
+   ```
+
+   #### Inverse
+   
+   ```
+   Get-DnsServerResourceRecord -ZoneName "0.16.172.in-addr.arpa" 
+   ```
+
+8. **Verify Web Server Configuration**:
    
    ```powershell
    Get-WindowsFeature -Name Web-Server
